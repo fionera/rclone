@@ -7,6 +7,7 @@ import (
 	"github.com/rclone/rclone/cmd/serve/dlna"
 	"github.com/rclone/rclone/cmd/serve/ftp"
 	"github.com/rclone/rclone/cmd/serve/http"
+	"github.com/rclone/rclone/cmd/serve/minio"
 	"github.com/rclone/rclone/cmd/serve/restic"
 	"github.com/rclone/rclone/cmd/serve/sftp"
 	"github.com/rclone/rclone/cmd/serve/webdav"
@@ -29,6 +30,9 @@ func init() {
 	}
 	if sftp.Command != nil {
 		Command.AddCommand(sftp.Command)
+	}
+	if minio.Command != nil {
+		Command.AddCommand(minio.Command)
 	}
 	cmd.Root.AddCommand(Command)
 }

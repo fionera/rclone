@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	bazil.org/fuse v0.0.0-20200524192727-fb710f7dfd05
-	cloud.google.com/go v0.70.0 // indirect
+	cloud.google.com/go v0.72.0 // indirect
 	github.com/Azure/azure-pipeline-go v0.2.3
 	github.com/Azure/azure-storage-blob-go v0.11.0
 	github.com/Unknwon/goconfig v0.0.0-20200908083735-df7de6a44db8
@@ -19,11 +19,10 @@ require (
 	github.com/calebcase/tmpfile v1.0.2 // indirect
 	github.com/coreos/go-semver v0.3.0
 	github.com/dropbox/dropbox-sdk-go-unofficial v5.6.0+incompatible
-	github.com/gogo/protobuf v1.3.1 // indirect
 	github.com/google/go-querystring v1.0.0 // indirect
 	github.com/hanwen/go-fuse/v2 v2.0.3
 	github.com/iguanesolutions/go-systemd/v5 v5.0.0
-	github.com/jlaffaye/ftp v0.0.0-20201021201046-0de5c29d4555
+	github.com/jlaffaye/ftp v0.0.0-20201112195030-9aae4d151126
 	github.com/jzelinskie/whirlpool v0.0.0-20201016144138-0675e54bb004
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 // indirect
 	github.com/klauspost/compress v1.11.2
@@ -31,6 +30,8 @@ require (
 	github.com/koofr/go-koofrclient v0.0.0-20190724113126-8e5366da203a
 	github.com/mattn/go-colorable v0.1.8
 	github.com/mattn/go-runewidth v0.0.9
+	github.com/minio/cli v1.22.0
+	github.com/minio/minio v0.0.0-20201103165348-ad382799b146
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/ncw/go-acd v0.0.0-20201019170801-fe55f33415b1
 	github.com/ncw/swift v1.0.52
@@ -55,19 +56,19 @@ require (
 	go.uber.org/multierr v1.6.0 // indirect
 	go.uber.org/zap v1.16.0 // indirect
 	goftp.io/server v0.4.0
-	golang.org/x/crypto v0.0.0-20201016220609-9e8e0b390897
-	golang.org/x/net v0.0.0-20201029055024-942e2f445f3c
+	golang.org/x/crypto v0.0.0-20201112155050-0c6587e931a9
+	golang.org/x/net v0.0.0-20201110031124-69a78807bb2b
 	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
 	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
-	golang.org/x/sys v0.0.0-20201029080932-201ba4db2418
+	golang.org/x/sys v0.0.0-20201113233024-12cec1faf1ba
 	golang.org/x/text v0.3.4
 	golang.org/x/time v0.0.0-20200630173020-3af7569d3a1e
-	google.golang.org/api v0.34.0
+	google.golang.org/api v0.35.0
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20201028140639-c77dae4b0522 // indirect
-	google.golang.org/grpc v1.33.1 // indirect
 	gopkg.in/yaml.v2 v2.3.0
 	gopkg.in/yaml.v3 v3.0.0-20200615113413-eeeca48fe776 // indirect
 	storj.io/common v0.0.0-20201027143432-3718579e12bf // indirect
 	storj.io/uplink v1.3.1
 )
+
+replace google.golang.org/grpc => github.com/grpc/grpc-go v1.27.0
